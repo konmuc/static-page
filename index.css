@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: url('./images/backgroundImage1.jpeg');
+    background-size: cover;
+}
+
+@media (min-width: 600px) {
+    #wrapper {
+        width: 60vw;
+        margin: 10vw auto;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    }
+}
+
+#wrapper {
+     background-color: white;
+}
+
+hr {
+    height: 1px;
+    border: none;
+    color: #b4272f;
+    background-color: #b4272f;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 50vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+#date {
+    color: gray;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    text-transform: uppercase;
+}
+
+nav > a,:visited,:focus {
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav > a:hover {
+    font-weight: bold;
+    color: #b4272f;
+}
+
+nav > a::after {
+    display: inline-block;
+    content: " ";
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+main {
+    
+}
+
+main > section {
+    padding: 0 3vw;
+    width: calc(100%-6vw);
+    display: flex;
+    flex-direction: column;
+}
+
+main > section > * {
+    padding: 15px 3vw;
+}
+
+main > section > h2 {
+    padding: 0 0;
+    font-weight: lighter;
+    color: #b4272f;
+    font-size: 2em;
+}
+
+main > section > p {
+
+}
+
+main > section > iframe {
+    margin: 10px auto;
+    width: calc(100% - 6vw);
+    /* height: calc((100% - 6vw) * (9 / 16));     */
+    height: 27vw;
+}
+
+.sponsoring-logos {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: repeat(auto-fit, 5vmax);
+    grid-template-rows: repeat(auto-fit, 5vmax);
+}
+
+.sponsoring-logos::before {
+    /* Fix to square up the grid cells */
+    content: '';
+    width: 0;
+    padding-bottom: 100%;
+    grid-row: 1 / 1;
+    grid-column: 1 / 1;
+  }
+
+.sponsoring-logos > * {
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    min-width: 5vmax;
+    height: 100%;
+    min-height: 5vmax;
+    grid-column: span var(--aspect-width, 1);
+    grid-row: span var(--aspect-height, 1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+}
