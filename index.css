@@ -123,6 +123,8 @@ main > section > iframe {
     grid-auto-flow: column dense;
     grid-template-columns: repeat(auto-fit, 5vmax);
     grid-template-rows: repeat(auto-fit, 5vmax);
+    --aspect-width: 4;
+    --aspect-height: 2
 }
 
 .sponsoring-logos::before {
