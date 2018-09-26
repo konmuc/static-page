@@ -107,6 +107,13 @@ main > section > h2 {
     font-size: 2em;
 }
 
+main > section > h3 {
+    padding: 0 0;
+    font-weight: lighter;
+    color: #b4272f;
+    font-size: 1.2em;
+}
+
 main > section > p {
 
 }
