@@ -107,6 +107,10 @@ nav > a::after {
     visibility: hidden;
 }
 
+#logo {
+    object-fit: contain;
+}
+
 main {
     
 }
