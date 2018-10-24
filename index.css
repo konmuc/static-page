@@ -235,7 +235,7 @@ footer {
     }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: 1500px) {
     .excursions {
         display: grid;
         grid-gap: 2vmin;
