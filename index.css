@@ -242,4 +242,15 @@ footer {
         grid-auto-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     }
+
+    .excursions > article > img {
+        width: 10vw;
+        height: auto;
+        grid-column: span 2;
+    }
+    
+    .excursions > article > p {
+        grid-column: span 2;
+        text-align: initial;
+    }
 }
