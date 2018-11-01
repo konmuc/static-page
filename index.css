@@ -183,8 +183,10 @@ main > section > iframe {
     grid-auto-flow: column dense;
     grid-template-columns: repeat(auto-fit, 5vmax);
     grid-template-rows: repeat(auto-fit, 5vmax);
-    --aspect-width: 4;
-    --aspect-height: 2
+    --aspect-width: 1;
+    --aspect-height: 1
+    object-fit: cover;
+    object-position: bottom center;
 }
 
 .sponsoring-logos::before {
@@ -201,7 +203,7 @@ main > section > iframe {
     align-self: center;
     width: 100%;
     min-width: 5vmax;
-    height: 100%;
+    height: auto;
     min-height: 5vmax;
     grid-column: span var(--aspect-width, 1);
     grid-row: span var(--aspect-height, 1);
