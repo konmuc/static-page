@@ -132,6 +132,74 @@ main > section > iframe {
     height: 27vw;
 }
 
+/* Ablauf */
+
+#tableWrapper {
+    overflow-x: auto;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2) inset;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+tbody th {
+    font-weight: lighter;
+    border-bottom: 2px solid #d4d6d4;
+    text-align: right;
+}
+
+td {
+    font-weight: lighter;
+    color: white;
+    background-color: #39546b;
+    padding: 2px;
+}
+
+td:empty {
+    background-color: transparent;
+}
+
+td.light-blue {
+    background-color: #39546b;
+}
+
+td.dark-blue {
+    background-color: #0a2040;
+}
+
+td.light-gray {
+    background-color: #d4d6d4;
+    color: #0a2040;
+}
+
+td.gray {
+    background-color: #a8a9aa;
+}
+
+td.dark-gray {
+    background-color: #878a8d;
+    background-image: linear-gradient(to bottom, #878a8d, white);
+}
+
+td.red {
+    background-color: #ed1e25;
+}
+
+td.mix_light-blue_red {
+    background-image: linear-gradient(to bottom, #ed1e25, #39546b 40%);
+}
+
+/* Excursions */
 .excursions {
     display: grid;
     grid-gap: 1vmin;
