@@ -152,6 +152,11 @@ td {
     border-collapse: collapse;
 }
 
+thead th {
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
 tbody th {
     font-weight: lighter;
     border-bottom: 2px solid #d4d6d4;
@@ -188,7 +193,7 @@ td.gray {
 
 td.dark-gray {
     background-color: #878a8d;
-    background-image: linear-gradient(to bottom, #878a8d, white);
+    background-image: linear-gradient(to bottom, #878a8d, white 95%);
 }
 
 td.red {
