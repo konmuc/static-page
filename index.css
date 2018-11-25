@@ -252,34 +252,13 @@ td.mix_light-blue_red {
 }
 
 .sponsoring-logos {
-    display: grid;
-    grid-auto-flow: column dense;
-    grid-template-columns: repeat(auto-fit, 5vmax);
-    grid-template-rows: repeat(auto-fit, 5vmax);
-    --aspect-width: 1;
-    --aspect-height: 1
-    object-fit: cover;
-    object-position: bottom center;
+    margin-left: 5vmax;
 }
 
-.sponsoring-logos::before {
-    /* Fix to square up the grid cells */
-    content: '';
-    width: 0;
-    padding-bottom: 100%;
-    grid-row: 1 / 1;
-    grid-column: 1 / 1;
-  }
-
 .sponsoring-logos > * {
-    justify-self: center;
-    align-self: center;
-    width: 100%;
-    min-width: 5vmax;
-    height: auto;
-    min-height: 5vmax;
-    grid-column: span var(--aspect-width, 1);
-    grid-row: span var(--aspect-height, 1);
+    display: inline-block;
+    width: auto;
+    height: 5vmax;
 }
 
 footer {
