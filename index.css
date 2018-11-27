@@ -235,9 +235,6 @@ td.mix_light-blue_red {
     grid-column: span 2;
     align-self: center;
     justify-self: center;
-    margin: 2vmin;
-    height: 20vw;
-    width: auto;
 }
 
 .excursions > article > .description {
@@ -267,6 +264,28 @@ footer {
     padding: 1em;
 }
 
+/* Fachvorträge */
+#fachvortraege.excursions {
+
+}
+
+#fachvortraege.excursions > article > img {
+    padding: 0;
+    margin: 0;
+}
+
+#fachvortraege.excursions > article > .description {
+    grid-column: span 2;
+    text-align: initial;
+}
+
+#fachvortraege.excursions > article > .copyright {
+    grid-column: span 2;
+    text-align: initial;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
 /* Media queries */
 @media (min-width: 600px) {
     #wrapper {
@@ -293,7 +312,7 @@ footer {
 
     .excursions > article > img {
         width: auto;
-        height: 10vh;
+        height: 20vh;
         grid-column: span 2;
     }
     
